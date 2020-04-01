@@ -14,9 +14,6 @@ DNSに||アフィカスブログドメイン^と||sch.line.me^
 https://280blocker.net/files/280blocker_domain_ag.txt  
 https://280blocker.net/files/280blocker_adblock.txt  
 
-インポートの前にすること  
-拡張子をjsonにする  
-
 インポートの後にすること  
 有料はHTTPSをどうするか  
 無料はHTTPSをどうするかとコンテンツブロックのUser rulesに280blocker_adblock.txt追加
