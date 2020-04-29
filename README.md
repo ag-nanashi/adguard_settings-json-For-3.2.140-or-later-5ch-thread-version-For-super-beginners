@@ -1,4 +1,4 @@
-# adguard_settings_3.2.140以降用_5chスレ版_超初心者向けとりあえずAdguard入れたけどなにすればいい？これインポートするんだ
+# adguard_settings_5chスレ版_超初心者向けとりあえずAdguard入れたけどなにすればいい？これインポートするんだ
 
 ## 最初に
 　すでになにか設定している場合には、**試す前に設定バックアップ**をしましょう。
@@ -19,6 +19,7 @@
 
 　これは提言のほかに`||アフィカスブログドメイン^`と`||sch.line.me^`を追加し、拡張機能を無効化したもの。  
 　最低限のセットアップがこれをインポートするだけで簡単にほとんど終わります。
+　このインポート用設定ファイルが対応するのは[3.3.3 Release(v3.3.231)](https://github.com/AdguardTeam/AdguardForAndroid/releases/download/v3.3.231/adguard-3.3.3-release.apk)(APK)以降です。
 <details>
 <summary>用語解説</summary>
 
@@ -38,9 +39,11 @@
 ## 使い方
 
 ### ダウンロードの仕方
-**[直リンク](https://github.com/ag-nanashi/adguard_settings-json-For-super-beginners-at-5ch/raw/master/adguard_settings_3.2.140%E4%BB%A5%E9%99%8D%E7%94%A8_5ch%E3%82%B9%E3%83%AC%E7%89%88_%E8%B6%85%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9AAdguard%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%91%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%99%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%EF%BC%9F%E3%81%93%E3%82%8C%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%82%93%E3%81%A0.json)**
+**[直リンク](https://github.com/ag-nanashi/adguard_settings-json-For-super-beginners-at-5ch/raw/master/adguard_settings_3.3.3%28v3.3.231%29%E4%BB%A5%E9%99%8D%E7%94%A8_5ch%E3%82%B9%E3%83%AC%E7%89%88_%E8%B6%85%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9AAdguard%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%91%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%99%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%EF%BC%9F%E3%81%93%E3%82%8C%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%82%93%E3%81%A0.json)**  
+**[zip直リンク](https://github.com/ag-nanashi/adguard_settings-json-For-super-beginners-at-5ch/blob/master/adguard_settings_3.3.3%28v3.3.231%29%E4%BB%A5%E9%99%8D%E7%94%A8_5ch%E3%82%B9%E3%83%AC%E7%89%88_%E8%B6%85%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%81%A8%E3%82%8A%E3%81%82%E3%81%88%E3%81%9AAdguard%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%91%E3%81%A9%E3%81%AA%E3%81%AB%E3%81%99%E3%82%8C%E3%81%B0%E3%81%84%E3%81%84%EF%BC%9F%E3%81%93%E3%82%8C%E3%82%A4%E3%83%B3%E3%83%9D%E3%83%BC%E3%83%88%E3%81%99%E3%82%8B%E3%82%93%E3%81%A0.zip?raw=true)**
 - *ブラウザにリンク先をダウンロードがある場合*は上のリンクを長タップなどする
 - *ダウンローダーアプリの場合*は上のリンクを共有でダウンローダーアプリに渡す
+- zip形式の取り扱いについては[検索結果](https://www.google.co.jp/search?tbs=qdr:m6&q=%22android%22%20AND%20%22zip%22%20AND%20%22%E8%A7%A3%E5%87%8D%22%20AND%20%22%E6%96%B9%E6%B3%95%22%20OR%20%22%E3%82%84%E3%82%8A%E6%96%B9%22%20OR%20%22%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%22)からご自身で判断してください
 
 ### インポートの仕方
 1. Adguardを起動
@@ -103,12 +106,42 @@
 	1. 拡張機能の無効化
 
 #### 追加したもの
-- コンテンツ
+- コンテンツ: カスタムフィルタ
 	1. `https://280blocker.net/files/280blocker_adblock.txt`
+- コンテンツ: ユーザールール
+	1. インポート履歴に`https://280blocker.net/files/280blocker_adblock.txt`
 - DNS
 	1. `||アフィカスブログドメイン^`
 	1. `||sch.line.me^`
 	1. `https://280blocker.net/files/280blocker_domain_ag.txt`
+
+#### 追加したもの（デフォルト無効）
+　著名なフィルタを登録しています。  
+　スレで紹介された中で継続してメンテナンスされているか現在も有効な中から独断と偏見で選び登録しています。  
+　これらは登録していますが**有効化していません**。  
+　のちのちフィルタを追加する手間を省くために登録だけしてあります。
+
+- コンテンツ
+	1. [たまごフィルタ](https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/tamago_filter.txt)
+	1. [豆腐フィルタ](https://raw.githubusercontent.com/tofukko/filter/master/Adblock_Plus_list.txt)
+	1. [もちフィルタ](https://raw.githubusercontent.com/eEIi0A5L/adblock_filter/master/mochi_filter.txt)
+	1. [なんJ改修フィルター](https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-filter.txt)  
+	信頼するフィルタ: **有効**
+	1. [なんJ拡張フィルター：一般ルール](https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/supplement-rules.txt)  
+	信頼するフィルタ: **有効**
+	1. [なんJ拡張フィルター：Paranoidルール](https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/paranoid-rules.txt)  
+	信頼するフィルタ: **有効**
+	1. [chmate0.8.10.62ブロックルール<有料専用版>](https://pastebin.com/raw/RbfDWJMx)
+	1. [AdGuard Japanese Mobile Site Filter FA-FA(仮)](https://raw.githubusercontent.com/sa-ki13/jmsf/master/japanese_mobile_site_filter.txt)
+	1. [対AdGuard Affiliate Program2](https://pastebin.com/raw/LBCYrHdJ)  
+	信頼するフィルタ: **有効**
+- DNS
+	1. [ABP版: 280blocker for japanese mobile site](https://280blocker.net/files/280blocker_adblock.txt)
+	1. [hosts2ch - Japanese mobile ad servers only](https://sites.google.com/site/hosts2ch/ja)
+	1. [なんJ改修DNSフィルター](https://raw.githubusercontent.com/nanj-adguard2/nanj-kaishuu-filter/master/nanj-kaishuu-dns-filter.txt)
+	1. [なんJ拡張フィルター：DNSルール](https://raw.githubusercontent.com/nanj-adguard2/nanj-kakuchou-filter/master/DNS-rules.txt)
+	1. [chmate0.8.10.62ブロックルール<有料専用版>](https://pastebin.com/raw/RbfDWJMx)
+	1. [chmate0.8.10.62ブロックルール<無料専用版>](https://pastebin.com/raw/vHRJk5xD)
 </details>
 
 ### 素朴な疑問
