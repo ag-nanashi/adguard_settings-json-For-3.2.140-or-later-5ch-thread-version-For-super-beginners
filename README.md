@@ -18,7 +18,7 @@
 </details>
 
 　これは提言のほかに`||アフィカスブログドメイン^`と`||sch.line.me^`を追加し、拡張機能を無効化したもの。  
-　最低限のセットアップがこれをインポートするだけで簡単にほとんど終わります。
+　最低限のセットアップがこれをインポートするだけで簡単にほとんど終わります。  
 　このインポート用設定ファイルが対応するのは[3.3.3 Release(v3.3.231)](https://github.com/AdguardTeam/AdguardForAndroid/releases/download/v3.3.231/adguard-3.3.3-release.apk)(APK)以降です。
 <details>
 <summary>用語解説</summary>
